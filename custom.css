@@ -571,35 +571,35 @@ footer i {
 
 
 #skillcontainer{
-  width:60%;
+  width:40%;
   margin:auto;
 }
 
 .scontainer {
   width: 100%;
-  background-color: #ddd;
+  background-color: #f0f0f0;
   border-radius: 11px;
-  height: 25px;
+  height: 20px;
 }
 
 .skills {
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
+  background-color: #2196F3;
   border-radius: 11px;
-  height: 25px;
+  height: 20px;
 
 }
 
-.html {width: 70%; background-color: #4CAF50;}
-.css {width: 70%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
-.cpp {width: 85%; background-color: #f44336;}
-.c {width: 80%; background-color: #808080;}
-.java {width: 70%; background-color: #f44336;}
-.python {width: 60%; background-color: #808080;}
+.html {width: 70%;}
+.css {width: 70%; }
+.js {width: 65%; }
+.php {width: 60%;}
+.cpp {width: 85%;}
+.c {width: 80%;}
+.java {width: 70%; }
+.python {width: 60%;}
 
 
 
@@ -607,6 +607,8 @@ footer i {
 #experience{
   background-color: white;
   padding-top: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
 
   
   
