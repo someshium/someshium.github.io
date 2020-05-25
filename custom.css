@@ -57,6 +57,7 @@ html {
   html {
     font-size: 58%;
   }
+
 }
 
 /* 460px / 16px = 28.75em */
@@ -74,6 +75,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color:  #303841;
+  
 }
 
 h1,
@@ -97,7 +99,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 img {
@@ -117,7 +119,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  background: #303841;
  
   z-index: 10;
 }
@@ -132,6 +134,9 @@ img {
   
   height:700px;
   padding-top: 100px;
+
+ 
+
 }
 
 
@@ -148,7 +153,7 @@ img {
   text-align: center;
   margin:auto;
   background-color:white;
-  border-radius: 10px;
+  
 
 
   
@@ -172,7 +177,7 @@ img {
 }
 
 #hire{
-  height:700px;
+  height:610px;
   padding-top: 40px;
   border: 4px solid var(--main-red);
 
@@ -182,9 +187,9 @@ img {
 #hire form{
   text-align: center;
   background-color: #eee;
-  width: 70%;
+  width: 60%;
   margin:auto;
-  height:510px;
+  height:450px;
   padding:30px;
   border: 10px solid #303841;
   border-radius: 40px;
@@ -204,7 +209,17 @@ img {
   width:70%;
   text-align: center;
   border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 
+}
+
+#hire input::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+textarea::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #hire h1{
@@ -220,8 +235,13 @@ width:70%;
   color:#303841;
 }
 
+.button{
+  font-size:20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .button:hover{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(253, 52, 52);
 }
 
 
@@ -242,7 +262,7 @@ width:70%;
 }
 
 .nav-list a:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  box-shadow: 0 0 11px rgba(240, 235, 235, 0.39);
 
 }
 
@@ -254,17 +274,25 @@ width:70%;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 120vh;
+  height: 110vh;
   background-image:url("mypic3.jpg");
+  
   background-size:cover;
   background-position: center;
-  opacity:0.5;
-  margin-top: 50px;
+  opacity:0.7;
+  
+  margin-top: 60px;
+  
 
   
 }
 .welcome-section h1{
-  color:black;
+  color: black;
+  padding-top: 260px;
+}
+
+#down_button i{
+
 }
 
 
@@ -381,6 +409,7 @@ width:70%;
   height: 80vh;
   padding: 0 2rem;
   background: var(--main-gray);
+  
 }
 
 .contact-section-header > h2 {
@@ -426,7 +455,27 @@ footer {
   background: var(--main-gray);
   border-top: 4px solid var(--main-red);
   text-align: center;
+ 
 }
+
+#mediaicon{
+
+  width:60%;
+  margin: auto;
+ 
+ 
+
+
+
+}
+
+.fab:hover{
+  color:#2196F3;
+ 
+}
+
+
+
 
 footer > p {
   margin: 2rem;
@@ -450,10 +499,15 @@ footer i {
   background-color:  #45567d;
   height: 700px;
   padding-top: 80px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  
+  
 }
 
+
 #skillcontainer{
-  width:70%;
+  width:60%;
   margin:auto;
 }
 
@@ -489,158 +543,65 @@ footer i {
 #experience{
   background-color: #ccc;
   padding-top: 70px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  
+  
+}
+#exp_box{
+
+ 
+  width:60%;
+  margin:auto;
+
+ 
+  
+
 }
 
-.timeline{
-  --uiTimelineMainColor: var(--timelineMainColor, #222);
-  --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
+.exp_data{
+  background-color: #45567d;
+  width:300px;
+  margin-left: 30px;
+  
+  
+  
 
-  position: relative;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  width:70%;
-  margin: auto;
 }
 
-.timeline:before{
-  content: "";
-  width: 4px;
-  height: 100%;
-  background-color: var(--uiTimelineMainColor);
+#experience li{
+list-style-type: none;
+position: relative;
+width: 6px;
 
+padding-top: 50px;
+background: black;
+}
+
+#experience ul li::after {
+  content: '';
   position: absolute;
-  top: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
 }
 
-.timeline__group{
-  position: relative;
-}
 
-.timeline__group:not(:first-of-type){
-  margin-top: 4rem;
-}
 
-.timeline__year{
-  padding: .5rem 1.5rem;
-  color: var(--uiTimelineSecondaryColor);
-  background-color: var(--uiTimelineMainColor);
 
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
-.timeline__box{
-  position: relative;
-}
 
-.timeline__box:not(:last-of-type){
-  margin-bottom: 30px;
-}
 
-.timeline__box:before{
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: var(--uiTimelineMainColor);
 
-  position: absolute;
-  left: 0;
-  z-index: -1;
-}
 
-.timeline__date{
-  min-width: 65px;
-  position: absolute;
-  left: 0;
 
-  box-sizing: border-box;
-  padding: .5rem 1.5rem;
-  text-align: center;
-
-  background-color: var(--uiTimelineMainColor);
-  color: var(--uiTimelineSecondaryColor);
-}
-
-.timeline__day{
-  font-size: 2rem;
-  font-weight: 700;
-  display: block;
-}
-
-.timeline__month{
-  display: block;
-  font-size: .8em;
-  text-transform: uppercase;
-}
-
-.timeline__post{
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  border-left: 3px solid var(--uiTimelineMainColor);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
-  background-color: var(--uiTimelineSecondaryColor);
-}
-
-@media screen and (min-width: 641px){
-
-  .timeline:before{
-    left: 30px;
-  }
-
-  .timeline__group{
-    padding-top: 55px;
-  }
-
-  .timeline__box{
-    padding-left: 80px;
-  }
-
-  .timeline__box:before{
-    top: 50%;
-    transform: translateY(-50%);  
-  }  
-
-  .timeline__date{
-    top: 50%;
-    margin-top: -27px;
-  }
-}
-
-@media screen and (max-width: 640px){
-
-  .timeline:before{
-    left: 0;
-  }
-
-  .timeline__group{
-    padding-top: 40px;
-  }
-
-  .timeline__box{
-    padding-left: 20px;
-    padding-top: 70px;
-  }
-
-  .timeline__box:before{
-    top: 90px;
-  }    
-
-  .timeline__date{
-    top: 0;
-  }
-}
-
-.timeline{
-  --timelineMainColor: #1a81d4;
-  font-size: 16px;
-}
-
-/*
-=====
-DEMO
-=====
-*/
+/* demooooooooooooo*/
 
 @media (min-width: 768px){
 
@@ -714,3 +675,132 @@ LinkedIn
 .linkedin__link{
   color: #ff5c5c;
 }
+
+
+
+
+/* download my cvvvv  */
+
+#resume{
+  height:300px;
+  text-align: center;
+  background-color: #45567d;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding-top: 80px;
+}
+
+#resume h2{
+  
+  
+}
+
+i{
+  color: white;
+  
+ 
+}
+i:hover{
+  color:#303841;
+}
+
+
+
+
+
+
+/* about meeeeeeeee    */
+#about{
+  display:flex;
+  
+  background-color: white;
+  
+  height: 700px;
+  color: #303841;
+  font-size: 20px;
+  
+
+}
+
+#aboutme{
+  width:50%;
+  margin: auto;
+  back
+  
+
+ 
+
+}
+
+#quote {
+
+  width:50%;
+  margin: auto;
+  text-align:center; 
+}
+
+#quote h3{
+  padding: 30px;
+}
+
+
+/* typewriter effect */
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+.container h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+.container h1 {
+  font-size: 3.5rem;
+}
+
+.container h2 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+
+}
+
+
+
+@media(min-width: 1200px) {
+ .container h1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+ .container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+ .container h1 {
+    font-size: 2.5rem;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+}
+
