@@ -159,3 +159,49 @@ footer ul{
 footer .link{
     color:white;
 }
+
+/* blog */
+
+.blog{
+    border: 2px solid #00BFA6 ;
+    border-radius: 1rem;
+}
+
+/* card */
+.card{
+    border:3px solid cyan;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.topic{
+    color: #00BFA6;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    
+}
+.desc{
+    padding: 1rem;
+}
+
+
+
+.image{
+    background-color: #00BFA6;
+    width: 60%;
+    margin: auto;
+
+}
+
+.image .pic{
+    width:100%;
+    height: 300px;
+    
+    margin: auto;
+    border-radius: 1rem;
+    
+}
