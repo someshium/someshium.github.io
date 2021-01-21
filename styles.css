@@ -205,3 +205,12 @@ footer .link{
     border-radius: 1rem;
     
 }
+
+.bimage{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
